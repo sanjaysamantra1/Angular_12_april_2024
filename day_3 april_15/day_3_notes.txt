@@ -1,0 +1,54 @@
+1. Visual Studio Code
+https://code.visualstudio.com/download
+
+2. Any Browser (chrome/firefox)
+
+
+Add VSCode Extensions
+======================
+1. Go to 'Extensions' tab and install below extension
+   Open In Browser  (OR) liveserver
+2. vscode-icons
+   
+
+Run a HTML file
+================
+1. Create a HTML file & add some content
+2. Alt + b   (Make sure 'open in browser' extension is installed)
+   Alt + Shift + b 
+
+
+Shortcuts
+=========
+!           boilerplate HTML-5 code
+h1          creates an <h1>
+div#div1    create a div with id 'div1'
+p.para1{This is Paragraph-1}
+p*10{This is paragraph-$}   creates 10 paragraph
+table>tr*20>td*5{Data-$}   create a table with 50 rows & 5 columns
+
+
+HTML - content of a webpage
+CSS - for styling
+Bootstrap - Responsiveness + pre-defined components-table,carousel,modal,card
+Javascript - behaviour of a webpage
+
+
+
+Javascript
+==========
+-Dynamically typed , synchronous & Single Threaded Programming Language.
+-Javascript Engine executes code from top to bottom , line by line , hence, it is synchronous
+-Javascript Engine has only 1 'call-stack', so that it can only do 1 thing ata time.
+
+-a javascript engine is a program/application that executes javascript code. 
+-Every Browser has a javascript engine.
+
+
+Javascript Engines
+==================
+v8             -  Google , chrome
+SpiderMonkey   -  firefox
+JavascriptCore -  safari
+Chakra         -  IE
+

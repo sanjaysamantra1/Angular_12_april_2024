@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 350px;
+            height: 400px;
+        }
+
+        button {
+            padding: 10px 60px;
+            color: white;
+            border: none;
+        }
+
+        #addToCart {
+            background-color: orange;
+        }
+
+        #buyNow {
+            background-color: orangered;
+        }
+
+        .btn-purple {
+            background-color: purple !important;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script>
+        function addToCart() {
+            alert('Your Item Added to Cart...')
+        }
+    </script>
+</head>
+
+<body>
+    <img src="https://rukminim2.flixcart.com/image/2000/2000/xif0q/backpack/m/e/c/-original-imagzjw4rkmnd8ja.jpeg?q=70&crop=false"
+        alt="">
+    <br />
+    <button id="addToCart" onclick="addToCart()">ADD TO CART</button>
+    <button id="buyNow">BUY NOW</button>
+    <hr>
+
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-secondary">Secondary Button</button>
+    <button class="btn btn-danger">danger Button</button>
+    <button class="btn btn-warning">warning Button</button>
+    <button class="btn btn-info">info Button</button>
+
+    <button class="btn btn-purple btn-lg">Purple Button</button>
+</body>
+
+</html>
