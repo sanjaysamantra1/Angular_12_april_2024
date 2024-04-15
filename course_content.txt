@@ -1,0 +1,62 @@
+Javascript
+==========
+Datatypes - Yes
+Variables - Yes
+Use strict - yes
+Functions  - Yes
+Math - yes
+String - yes
+Array - Yes
+Object - Yes
+OOPS - Yes
+Closure - Yes
+Prototypes - Yes
+Call , bind , apply - Yes
+Date & Time - Yes
+setTimeout , setInterval - Yes
+offline storage - yes   (HTML-5)
+
+
+ES-6 Features
+=============
+let and const Keywords - Yes
+Arrow Functions   - Yes
+Template Literals - yes
+Multi-line Strings - yes
+Default Parameters - yes
+Destructuring Assignment - yes
+Enhanced Object Literals - yes
+Classes  - yes
+Modules  - yes
+Promises,async await - yes
+
+
+
+
+Angular
+===========
+Angular Installation
+Angular vs AngularJS
+Angular CLI
+Component
+Module
+Data binding
+View Encapsulation
+Inbuilt Directives
+Custom Directives
+Pipes
+Custom Pipes
+Component Communication
+LifeCycle Methods / Hooks
+Services
+Dependency Injection
+HttpClient / AJAX
+Interceptors
+Observables (RxJs)
+Form
+Routing
+Lazy Loading
+NgRx (State management)
+Build & Deploy
+Angular Material
+Unit testing (Jasmine + Karma)
