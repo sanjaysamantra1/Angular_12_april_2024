@@ -1,0 +1,38 @@
+Types 
+======
+1. internal
+   a. <script></script>
+   b. <head>   OR  <body>
+   c. page level
+2. External
+   a. Separate JS file (needs to included in HTML using <script>)
+   b. <head>  OR <body>
+   c. Application / Project
+
+Q. What is the best place to include js files?
+   head / body?
+
+
+Async / defer attribute in <script>
+====================================
+-in HTML-5, 2 attributes (async/defer) got introduced for <script>
+-async/defer attribute should be used with external javascript only
+-these attributes only make sense in head section
+
+https://flaviocopes.com/javascript-async-defer/
+
+1. script in head , no async & no defer
+2. script in body , no async & no defer
+3. script in head , async
+4. script in head , defer
+
+
+How to Execute a Javascript file
+================================
+1. create JS file , add your JS code
+   include in HTML file using <script>
+   Run HTML file
+2. create a JS file, add your JS code
+   run js file using nodejs (make sure nodejs is installed)
+   ex:  node addition.js
+ 
