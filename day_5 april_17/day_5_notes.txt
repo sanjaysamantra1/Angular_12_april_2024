@@ -1,0 +1,36 @@
+Javascript - is a programming language, follows ECMASCRIPT Standards.
+ECMA - European Computer Manufacturers Association.
+ECMASCRIPT -  is a standard for the scripting languages.
+
+ES-5   2009
+ES-6   2015  (let,const,rest,spread,**,class,extends,module.....)
+ES-7   2016
+ES-8   2017
+ES-9   2018
+ES-10  2019
+
+
+
+ES-14  2023
+
+
+	Javascript					 TypeScript
+---------------------------------------------------------
+1.strongly typed-No				1.strongly typed-yes
+2.directly run on browser		2.not directly run on the browser
+3.interface-No					3.interface - Yes
+4.optional parameters-No		4.optional parameters-yes
+5.interpreted language			5.compiles the code
+6.errors at runtime				6.errors during the development time
+7.generics-no					7.generics-yes
+
+
+Convert TS file to JS file
+==========================
+1. make sure nodeJS is installed
+2. install TypeScript 
+   npm i -g typescript
+3. tsc abc.ts
+
+
+
