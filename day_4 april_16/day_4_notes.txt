@@ -5,7 +5,7 @@ Types
    b. <head>   OR  <body>
    c. page level
 2. External
-   a. Separate JS file (needs to included in HTML using <script>)
+   a. Separate JS file (needs to be included in HTML using <script>)
    b. <head>  OR <body>
    c. Application / Project
 
