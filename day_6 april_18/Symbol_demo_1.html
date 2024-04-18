@@ -1,0 +1,25 @@
+<script>
+    let user = {};
+    // inside an object the key should be of type string/symbol
+    user['firstName'] = 'Sanjay';
+    user['lastName'] = 'Samantra';
+    user['add'] = 'Bangalore';
+
+    // add a symbol type property
+    const id = Symbol('my id');
+    user[id] = 101;
+
+    console.log(user);
+    console.log(user['add'])
+
+    for (key in user) {
+        console.log(key + "    " + user[key])
+    }
+   /*  for (key of Object.keys(user)) {
+        console.log(key + "    " + user[key])
+    } */
+
+    console.log(Object.keys(user))
+
+    console.log(Object.getOwnPropertySymbols(user))
+</script>

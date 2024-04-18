@@ -1,0 +1,17 @@
+<script>
+    var a = 10;
+    var b = 'hello';
+    console.log(typeof a, typeof b);
+
+    var arr = [10, 20];
+    var obj = { a: 1, b: 2 }
+
+    console.log(typeof arr); // Object
+    console.log(typeof obj); // Object
+
+    console.log(Array.isArray(arr)); // true
+    console.log(Array.isArray(obj)); // false
+
+    console.log(arr instanceof Array); // true
+    console.log(obj instanceof Array); // false
+</script>

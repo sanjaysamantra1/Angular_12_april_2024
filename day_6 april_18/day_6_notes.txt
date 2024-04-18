@@ -1,0 +1,55 @@
+Datatypes
+=========
+-Type of data we are dealing with. (number,string,boolean)
+-2 types of Datatypes:
+    a. Primitive       (number,string,boolean,undefined,symbol,bigint)
+    b. non-primitive   (Object)
+
+
+Primitive Vs Non-Primitive
+==========================
+-primitives are immutable and non primitives are mutable.
+-primitives are compared by value, non-Primitives are compared by reference.
+
+undefined and null
+==================
+-undefined means 'not initialized'. it means a variable is declared but not initialized.
+-when a variable is declared without a value, that variable by default will have 'undefined'
+value assigned by javascript.
+-null means 'the intentional absence of any object value'
+-null is an assigned value, it means nothing.
+-typeof undefined is undefined, type of null is object;
+
+how to differentiate array & object
+===================================
+var arr = [10, 20];
+var obj = { a: 1, b: 2 }
+
+console.log(typeof arr); // Object
+console.log(typeof obj); // Object
+
+console.log(Array.isArray(arr)); // true
+console.log(Array.isArray(obj)); // false
+
+console.log(arr instanceof Array); // true
+console.log(obj instanceof Array); // false
+
+
+symbol
+======
+-Symbols are used to add unique property keys to an object that won't collide with other keys.
+-Symbol allow us to create 'hidden' properties in an object.
+-const id = Symbol('my id');  // correct
+-const id = new Symbol('my id');  // correct
+-Symbols are not enumerated
+-Symbols are not part of Object.keys()
+
+
+bigint
+======
+
+
+
+
+
+
