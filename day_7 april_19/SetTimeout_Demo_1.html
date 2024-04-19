@@ -1,0 +1,14 @@
+<script>
+    console.log('Global code starts here')
+    function f1() {
+        console.log('I am f1')
+    }
+    function f2() {
+        for (let i = 1; i <= 1000; i++) {
+            console.log('hiiiiii ')
+        }
+    }
+    setTimeout(f1, 2000); // will never execute before 2000 even if stack is free
+    f2();
+    console.log('Global code ends here')
+</script>
