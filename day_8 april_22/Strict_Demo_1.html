@@ -1,0 +1,11 @@
+<script>
+    'use strict'
+    function f1() {
+        if (true) {
+            a = 10; // scope should have been block, but is global
+        }
+    }
+    f1();
+    console.log(a)
+    // Note : variable is declared without using var/let/const , that variable is always global
+</script>

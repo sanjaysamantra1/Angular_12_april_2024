@@ -1,0 +1,23 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(a, b, c);
+
+    var a = 'sachin';
+    console.log(a);
+
+    // let b = 'tendulkar';  // Identifier 'b' has already been declared
+
+    function f1() {
+        let b = 200;
+        console.log('function ', b)
+
+        if (true) {
+            let b = 2000;
+            console.log('block ', b)
+        }
+    }
+    console.log('global ', b);
+    f1();
+</script>

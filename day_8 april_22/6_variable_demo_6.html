@@ -1,0 +1,38 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+
+    function f1() {
+        var d = 40;
+        console.log('F1 starts here')
+        console.log(a, b, c, d);
+        console.log('F1 ends here')
+    }
+    function f2() {
+        console.log('F2 starts here')
+        console.log(a, b, c);
+        // console.log(d);
+        console.log('F2 ends here')
+    }
+    f1();
+    f2();
+
+    function varTest() {
+        var x = 100;
+        if (true) {
+            var name = 'Sachin Tendulkar';
+            console.log('BLock ', name); // y
+        }
+        console.log('Function ', name);  // y
+    }
+    varTest();
+    console.log('Global ', name);  // N
+    console.log('Global ', x);  // N
+
+
+    for (var i = 1; i <= 3; i++) {
+        console.log('inside loop ', i)
+    }
+    console.log('outside loop ', i)
+</script>

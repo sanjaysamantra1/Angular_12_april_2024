@@ -1,0 +1,59 @@
+Variables
+=========
+-Variables are containers for storing data values. 
+ Variable is a name of memory location.
+-Variables in Javascript can be declared by using either one of the below 3 keywords:
+ 1. var   
+ 2. let
+ 3. const
+
+	var						let						 const
+======================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed   2.value can be changed     2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.TDZ - No			 	 5.TDZ - Yes				5.TDZ - Yes
+6.function/global		 6.block/function/global	6.block/function/global
+
+N:p - All variables (var,let,const) are hoisted but only 'var' variables are usable/reachable before initialization.
+-let/const variables are not reachable/usable before initialization (Temporal Dead Zone)
+
+	
+Hoisting:
+=========
+-The process of assigning variable declarations a default value of 'undefined' during the creation phase is called Hoisting.
+-In hoisting, the variable and function declarations are put into memory during the	compile/creation phase before code execution phase.
+
+
+
+Temporal Dead Zone
+==================
+-The period between entering scope and being declared where they cannot be accessed. 
+ This period is the temporal dead zone (TDZ).
+-The state where variables are un-reachable. They are in memory, but they aren't usable.
+-The let and const variables exist in the TDZ from the start of their enclosing scope until they are initialized.
+-if a let/const variable is accessed before its declaration, it would throw a ReferenceError. Because of the TDZ.
+
+
+Use Strict
+==========
+-provides better coding standard and stronger error checking.
+-'use strict' is only recognized at the beginning of a script or a function.
+-The purpose of "use strict" is to execute the javascript in "strict mode".
+-when 'use strict' is not written, browser runs the JS in normal mode.
+-when 'use strict' is  written, browser runs the JS in strict mode.
+-Strict mode changes some previously-accepted mistakes into errors.
+
+
+1. variable declaration without var/let/const is not allowed.
+   makes it impossible to accidentally create global variables.
+2. function with duplicate arguements are not allowed.
+3. NaN/undefined/Infinity cann't be used as a variable name.
+4. Delete of an unqualified identifier in strict mode. 
+    ex:delete Object.prototype; 
+	var x = 5; delete x;
+5. Multiple assignments not allowed.
+   var a = b = c = 3;
+6. 'this' is undefined, when a function is invoked from Global Context in strict mode.

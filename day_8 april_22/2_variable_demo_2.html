@@ -1,0 +1,22 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(a, b, c);
+
+    a = 15;
+    b = 25;
+    // c = 35;  // Uncaught TypeError: Assignment to constant variable
+    console.log(a, b, c);
+
+    const arr = [10, 20];
+    arr.push(30);
+    console.log(arr);
+    // arr = [40, 50]; Uncaught TypeError: Assignment to constant variable
+
+    const obj = { a: 100, b: 200 };
+    obj.c = 300;
+    console.log(obj);
+
+    // obj = {}; Uncaught TypeError: Assignment to constant variable
+</script>
