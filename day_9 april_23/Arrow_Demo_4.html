@@ -1,0 +1,31 @@
+<script>
+    class Employee {
+        fName = 'sanjay';
+        lName = ' Kumar';
+        sal = 4000;
+        fullName = function () {
+            console.log(this)
+            console.log(this.fName + this.lName)
+        }
+        getSal = () => { // this = static, this = Employee
+            console.log(this)
+            console.log(this.sal * 12);
+        }
+    }
+    let emp = new Employee();
+
+   /*  emp.fullName();
+    emp.getSal(); */
+
+    let a = emp.fullName.bind(emp);
+    a();
+
+    let b = emp.getSal;
+    b();
+
+    let c = b;
+    c();
+
+    let d = c;
+    d();
+</script>

@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <button id="btn-1">Button-1</button>
+    <button id="btn-2">Button-2</button>
+    <button id="btn-3">Button-3</button>
+
+    <script>
+        function changeColor() {  // this = dynamic, this = btn1 / btn2 / btn3
+            console.log(this);
+            this.style.backgroundColor = 'red';
+        }
+        document.getElementById('btn-1').addEventListener('click', changeColor)
+        document.getElementById('btn-2').addEventListener('click', changeColor)
+        document.getElementById('btn-3').addEventListener('click', changeColor)
+    </script>
+</body>
+
+</html>

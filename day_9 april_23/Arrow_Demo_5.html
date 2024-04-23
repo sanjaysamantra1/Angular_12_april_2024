@@ -1,0 +1,28 @@
+<script>
+    class Employee {
+        fName = 'sanjay';
+        lName = ' Kumar';
+
+        f1() {
+            console.log('I am f1', this.fName, this.lName);
+            let that = this;
+
+            function f3() {   // regular : how it is called
+                console.log(this)// this = undefined
+                console.log('I am f3', that.fName, that.lName);
+            }
+            f3();
+        }
+        f2 = () => {
+            console.log('I am f2', this.fName, this.lName);
+
+            let f4 = () => {   // regular : how it is called
+                console.log('I am f4', this.fName, this.lName);
+            }
+            f4();
+        }
+    }
+    let emp = new Employee();
+    emp.f1();
+    emp.f2();
+</script>

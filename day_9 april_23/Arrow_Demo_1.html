@@ -1,0 +1,18 @@
+<script>
+    let user = {
+        fName: 'Sanjay',
+        lName: ' Kumar',
+        displayName: function () { // this = user
+            console.log(this)
+            console.log(this.fName + this.lName)
+        },
+        printName: () => {  // this = window
+            console.log(this)
+            console.log(this.fName + this.lName)
+        }
+    }
+    user.displayName(); // regular function : this = how the function is called
+    user.printName();   // arrow function  : this = where the function is declared
+
+    // Note : inside Object literal arrow function's should not be used
+</script>

@@ -1,0 +1,21 @@
+<script>
+    class Employee {
+        fName = 'sanjay';
+        lName = ' Kumar';
+        sal = 4000;
+        fullName = function () {
+            console.log(this)
+            console.log(this.fName + this.lName)
+        }
+        getSal = () => { // this = static, this = Employee
+            console.log(this)
+            console.log(this.sal * 12);
+        }
+    }
+    let emp = new Employee();
+    /* emp.fullName();  // this = emp
+    emp.getSal();    // this = emp */
+
+    setTimeout(emp.fullName, 2000); // inside fullname() , this = window
+    setTimeout(emp.getSal, 4000); // inside getSal() , this = Employee
+</script>

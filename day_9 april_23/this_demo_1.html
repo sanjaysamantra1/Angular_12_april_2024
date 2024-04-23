@@ -1,0 +1,24 @@
+<script>
+    console.log('Profram Starts here');
+
+    console.log('line-3 ', this); // in global context , this = Window
+
+    let user = {
+        name: 'sachin',
+        displayName: function () {
+            console.log('inside display name', this); // this = user
+        }
+    }
+    user.displayName();
+
+    class Employee {
+        getSalary() {
+            console.log('inside getSalary ', this); // this = Employee
+        }
+    }
+    let emp = new Employee();
+    emp.getSalary();
+
+
+    console.log('Profram Ends here');
+</script>

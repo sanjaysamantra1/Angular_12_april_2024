@@ -1,0 +1,21 @@
+Functions 
+=========
+-function is a block of code/statements designed to perform a particular task.
+-function is executed only when that gets invoked/called.
+
+1. pre-defined (alert(),prompt(),confirm(),max(),min(),sqrt(),cbrt())
+	already written, we are just using them
+2. user-defined
+	we have to write,and we will use them   
+   a. function declaration (named function)
+   b. function expression(anonymous)
+   c. self invoked ( IIFE- Immediately Invoked Function Expression)
+   d. arrow function (ES - 6)(2015)
+  
+Arrow Function
+--------------
+-'this' value inside a regular function is dynamic and depends on the context in which it is called.
+-'this' inside the arrow function is bound lexically and equals to 'this' where the function is declared.
+-lexical context means that arrow function uses 'this' from the code that contains the arrow function.
+-Regular function ( this = how the function is invoked/who invoked )
+-Arrow function( this = where the function is declared )

@@ -1,0 +1,25 @@
+<script>
+    console.log('Program starts here')
+    // 1. Function Declaration
+    function add(a, b) {
+        console.log(a + b)
+    }
+    add(2, 3);
+
+    // 2. Function Expression
+    var sub = function (a, b) {
+        console.log(a - b);
+    }
+    sub(20, 10);
+
+    // 3. Self Invoked  (Immedidately Invoked Function Expression)
+    (function (a, b) {
+        console.log(a * b)
+    })(4, 5);
+
+    // 4. Arrow Function  (ES-6) 2015
+    var division = (a, b) => {
+        console.log(a / b);
+    }
+    division(20, 5);
+</script>
