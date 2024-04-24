@@ -9,20 +9,23 @@
 
             function f3() {   // regular : how it is called
                 console.log(this)// this = undefined
-                console.log('I am f3', that.fName, that.lName);
+                // console.log('I am f3', this.fName, this.lName);
             }
             f3();
-        }
-        f2 = () => {
-            console.log('I am f2', this.fName, this.lName);
 
-            let f4 = () => {   // regular : how it is called
+            let f4 = () => {   // arrow : Where it is declared
                 console.log('I am f4', this.fName, this.lName);
             }
             f4();
         }
+
     }
     let emp = new Employee();
+    console.log(emp)
     emp.f1();
-    emp.f2();
+
+    emp.f1.call({
+        fName: 'abc',
+        lName: ' xyz'
+    })
 </script>

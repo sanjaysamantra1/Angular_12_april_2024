@@ -1,0 +1,16 @@
+<script>
+    // add is HigherOrder - it has the ability to return another function
+    function add(a) {
+        return function (b) {
+            console.log(a + b)
+        }
+    }
+    add(2)(3);
+
+    let arr = [10, 11, 12, 13, 14, 15, 16, 17];
+    function f1(ele) {
+        return ele % 2 === 0;
+    }
+    let res = arr.filter(f1); // filter - HigherOrder , f1 - callback
+    console.log(res)
+</script>

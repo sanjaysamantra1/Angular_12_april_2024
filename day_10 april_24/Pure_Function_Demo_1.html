@@ -1,0 +1,30 @@
+<script>
+    let a = 10;
+
+    function f1() { // impure - trying to modify the data outside its scope
+        a = 12;
+    }
+
+    function f2(a, b) {  // impure - not returning any value
+        console.log(a + b);
+    }
+
+    function f3(a, b) { // impure
+        let add = a + b;
+        console.log(add);
+        return 'hello';
+    }
+
+    function f4() {
+        var x = 10;
+        return x;
+    }
+
+    function add(a, b) {  // pure
+        return a + b;
+    }
+
+    function simpleInterest(p, t, r) {  // pure
+        return (p * t * r) / 100
+    }
+</script>
