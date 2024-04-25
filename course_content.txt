@@ -2,14 +2,14 @@ Javascript
 ==========
 Datatypes - Yes
 Variables - Yes
-Use strict - 
-Functions  - 
+Use strict - Yes
+Functions  - Yes
+Closure - 
 Math - 
 String - 
 Array - 
 Object - 
 OOPS - 
-Closure - 
 Prototypes - 
 Call , bind , apply - 
 Date & Time - 
