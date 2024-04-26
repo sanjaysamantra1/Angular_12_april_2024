@@ -4,9 +4,9 @@ Datatypes - Yes
 Variables - Yes
 Use strict - Yes
 Functions  - Yes
-Closure - 
-Math - 
-String - 
+Closure - Yes
+Math - Yes
+String - Yes
 Array - 
 Object - 
 OOPS - 
