@@ -1,0 +1,24 @@
+String methods:
+--------------
+length;
+toUpperCase();
+toLowerCase();
+charAt();
+at()
+charCodeAt();
+concat();
+indexOf();
+lastIndexOf();
+includes();
+match();
+replace();
+replaceAll();
+slice(start, end)
+substring(start, end)
+substr(start, length)
+split()
+search(regex)
+trim()
+eval(); (eval() is from Window Object)
+
+N.p:- substring() cannot accept negative indexes. slice() does.
