@@ -1,0 +1,26 @@
+<script>
+    let employees = [
+        { eId: 101, name: 'sanjay', sal: 5000, gender: 'male' },
+        { eId: 104, name: 'geeta', sal: 8000, gender: 'female' },
+        { eId: 103, name: 'sameer', sal: 7000, gender: 'male' },
+        { eId: 102, name: 'sita', sal: 9000, gender: 'female' },
+        { eId: 105, name: 'deepak', sal: 8000, gender: 'male' }
+    ]
+    console.log(employees.at(0));
+    console.log(employees[0]);
+
+    // find the first female employee
+    let firstFemaleEmp = employees.find((emp) => emp.gender === 'female');
+    console.log(firstFemaleEmp);
+
+    let IndexfirstFemaleEmp = employees.findIndex((emp) => emp.gender === 'female');
+    console.log(IndexfirstFemaleEmp);
+
+    // find the last female employee
+    let lastFemaleEmp = employees.findLast((emp) => emp.gender === 'female');
+    console.log(lastFemaleEmp);
+
+    // find all the female employees
+    let allFemaleEmps = employees.filter((emp) => emp.gender === 'female');
+    console.log(allFemaleEmps)
+</script>
