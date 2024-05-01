@@ -1,0 +1,12 @@
+<script>
+    let arr1 = [10, 21, 31, 41, 51];
+    let res1 = arr1.some(ele => ele % 2 == 0);
+    console.log(res1);
+
+    let arr2 = [11, 21, 31, 41, 51];
+    function checkEven(ele) {
+        return ele % 2 === 0;
+    }
+    let res2 = arr2.some(checkEven);
+    console.log(res2)
+</script>

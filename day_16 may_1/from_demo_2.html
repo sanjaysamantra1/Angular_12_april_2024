@@ -1,0 +1,24 @@
+<script>
+    let mySet = new Set();
+    mySet.add(10)
+    mySet.add(20)
+    mySet.add(30)
+    mySet.add(40)
+    mySet.add(50)
+    mySet.add(10)
+    mySet.add(20);
+    console.log(mySet);
+    console.log(typeof mySet);
+    console.log(Array.isArray(mySet));
+
+    // convert set to Array
+    let myArr = Array.from(mySet);
+    let res = myArr.map(ele => ele + 5);
+    console.log(res)
+    console.log(mySet)
+
+    for(ele of mySet){
+        console.log(ele)
+    }
+    console.log(mySet[0])
+</script>

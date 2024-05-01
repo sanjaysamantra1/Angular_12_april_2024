@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <ol>
+        <li>Hyderabad</li>
+        <li>Bangalore</li>
+        <li>Chennai</li>
+        <li>Pune</li>
+        <li>Delhi</li>
+    </ol>
+    <script>
+        let cities = document.querySelectorAll('li');
+        console.log(cities);
+
+        let cityArr = Array.from(cities);
+
+        let evenCities = cityArr.filter((city, ind) => ind % 2 == 0);
+        console.log(evenCities)
+        evenCities.forEach(city=>city.style.background='red')
+    </script>
+</body>
+
+</html>
