@@ -1,0 +1,14 @@
+ES-6 Features
+=============
+let and const Keywords - 
+Arrow Functions   - 
+Template Literals - 
+Multi-line Strings - 
+Default Parameters - 
+Rest Parameter - inside a function decl - ...
+Spread Operator - anywhere else - ... (breaking an array to individual values)
+Destructuring Assignment - Array Destructuring,object Destructuring
+Enhanced Object Literals - 
+Classes  - 
+Modules  - 
+Promises,async await - 

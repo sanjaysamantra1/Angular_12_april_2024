@@ -7,7 +7,7 @@ Functions  - Yes
 Closure - Yes
 Math - Yes
 String - Yes
-Array - 
+Array - Yes
 Object - 
 OOPS - 
 Prototypes - 

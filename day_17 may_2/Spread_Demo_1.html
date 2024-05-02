@@ -1,0 +1,14 @@
+<script>
+    let arr1 = [10, 20];
+    let arr2 = arr1;  // Reference Copy, a new array is not being created
+    arr1.push(30);
+    arr2.push(40);
+    console.log(arr1, arr2);
+
+    let arr3 = [100, 200];
+    let arr4 = [...arr3];  // ... Spread ,  shallow copy 
+    // value copy , creates a new array with the values from old array
+    arr3.push(300);
+    arr4.push(400);
+    console.log(arr3, arr4);
+</script>

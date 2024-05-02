@@ -1,0 +1,34 @@
+<script>
+    function add(a, b) {
+        console.log(a + b);
+    }
+    add(2, 3);
+    add(2, 3, 4);
+    add(2, 3, 4, 5);
+
+    // arguments <2015
+    function addition() {
+        let sum = 0;
+        console.log(Array.isArray(arguments))
+        for (ele of arguments) {
+            sum = sum + ele;
+        }
+        console.log(sum)
+    }
+    addition(2, 3);
+    addition(2, 3, 4);
+    addition(2, 3, 4, 5);
+
+    // Es-6 REST parameter
+    function sum(...arr) {
+        let sum = 0;
+        console.log(Array.isArray(arr))
+        for (ele of arr) {
+            sum = sum + ele;
+        }
+        console.log(sum)
+    }
+    sum(2, 3);
+    sum(2, 3, 4);
+    sum(2, 3, 4, 5);
+</script>
