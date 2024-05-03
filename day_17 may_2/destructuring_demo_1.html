@@ -22,13 +22,29 @@
             "bs": "harness real-time e-markets"
         }
     }
-    let { id, name, username, phone, website, address: { city, street, zipcode } } = user;
+    let { id, name, username, phone, website, address: { city, street: userstreet, zipcode } } = user;
     console.log(id)
     console.log(name)
     console.log(username)
     console.log(phone)
     console.log(website)
     console.log(city)
-    console.log(street)
+    console.log(userstreet)
     console.log(zipcode)
+
+
+    let org = {
+        "address": {
+            "street": "street1234",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+    }
+    let { address: { street: orgstreet } } = org;
+    console.log(orgstreet)
 </script>

@@ -1,0 +1,17 @@
+<script>
+    class A {
+        a = 10;
+        static b = 20;
+
+        f1() {
+            console.log('I am f1');
+        }
+        static f2() {
+            console.log('I am f2...');
+        }
+    }
+    let objA = new A();
+    console.log(objA.a, A.b)
+    objA.f1();
+    A.f2();
+</script>

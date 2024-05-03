@@ -1,0 +1,18 @@
+<script>
+    function add(a, b) {
+        console.log(a + b)
+    }
+    add(2, 3);
+
+    // Es-5
+    function Trainer(name, course, mobile) { // constructor function
+        this.name = name;
+        this.course = course;
+        this.mobile = mobile;
+    }
+    let trainer1 = new Trainer('sanjay', 'Angular', 12345)
+    let trainer2 = new Trainer('Hari krishna', 'Core Java', 56789)
+    let trainer3 = Trainer('Satish Gupta', 'Python', 112233)
+
+    console.log(trainer1, trainer2, trainer3)
+</script>

@@ -1,0 +1,21 @@
+<script>
+    function getLaptop(model, year, mem, os) {
+        return { model: model, year, mem, os };
+    }
+    let laptop1 = getLaptop('Hp Probook', 2022, '8GB', 'Windows');
+    console.log(laptop1);
+
+    let user = {
+        fName: 'sanjay',
+        lName: ' Kumar',
+        sal: 4000,
+        fullName: function () {
+            return this.fName + this.lName;
+        },
+        annualSal() {
+            return this.sal * 12;
+        }
+    }
+    console.log(user.fullName())
+    console.log(user.annualSal())
+</script>
