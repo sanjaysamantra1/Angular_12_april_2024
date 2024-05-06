@@ -1,0 +1,32 @@
+<script>
+    class Person {
+        name;
+        age;
+        add;
+        constructor(name, age, add) {
+            this.name = name;
+            this.age = age;
+            this.add = add;
+        }
+    }
+    class Employee extends Person {
+        constructor(name, age, add, eid, sal) {
+            super(name, age, add); // super() calls parent's constructor
+            this.eid = eid;
+            this.sal = sal;
+        }
+    }
+    class Student extends Person {
+        constructor(name, age, add, roll, mark) {
+            super(name, age, add); // super() calls parent's constructor
+            this.roll = roll;
+            this.mark = mark;
+        }
+    }
+    let emp1 = new Employee('Siva', 25, 'Boston', 101, 8000);
+    let std1 = new Student('Dhamrendra', 35, 'Bihar', 1, 95);
+
+    console.log(emp1)
+    console.log(std1)
+
+</script>

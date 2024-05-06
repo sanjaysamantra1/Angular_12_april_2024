@@ -1,0 +1,44 @@
+<script>
+    class Student {
+        constructor(name, course, trainer, fee) {
+            this.name = name;
+            this.course = course;
+            this.trainer = trainer;
+            this.fee = fee;
+            // this.clgName = 'nareshIT';
+        }
+        f1 = function () {
+            console.log('I am f1...', this.name)
+        }
+        f2(){
+            console.log('I am f2...', this.name)
+        }
+    }
+    Student.prototype.clgName = 'nareshIT';
+    Student.prototype.displayInfo = function () {
+        console.log(this.name + "  " + this.course)
+    }
+
+    let student1 = new Student('Siva', 'Angular', 'Sanjay', 8000);
+    let student2 = new Student('Dhamrendra', 'Angular', 'Sanjay', 9000);
+    let student3 = new Student('Anisa', 'Angular', 'Sanjay', 10000);
+    console.log(student1)
+    console.log(student2)
+    console.log(student3)
+
+    console.log(student1.clgName, student2.clgName, student3.clgName);
+    student1.clgName = 'nareshInfoTech';
+    console.log(student1.clgName, student2.clgName, student3.clgName);
+
+    Student.prototype.clgName = 'nareshITech';
+    console.log(student1.clgName, student2.clgName, student3.clgName);
+    // console.log(student1.prototype.clgName)
+
+    let arr = [];
+    console.log(arr);
+
+    student1.displayInfo();
+
+    student1.f1();
+    student1.f2();
+</script>
