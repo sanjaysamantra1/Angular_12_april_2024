@@ -1,0 +1,19 @@
+<script>
+    let user = { name: 'sanjay', add: 'bangalore' };
+
+    document.write(user);
+    sessionStorage.setItem('user', user);
+
+    // convert Object To String before storing into Session Storage
+    let userStr = JSON.stringify(user);
+    sessionStorage.setItem('user', userStr);
+
+    let userData = sessionStorage.getItem('user')
+    console.log(typeof userData)
+    console.log(userData.name)
+
+    // convert the string data to object data
+    let userObj = JSON.parse(userData)
+    console.log(userObj.name, userObj.add)
+
+</script>

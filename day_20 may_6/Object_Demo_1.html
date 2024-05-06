@@ -1,0 +1,23 @@
+<script>
+    let user = {
+        firstName: 'sachin',
+        'last Name': 'tendulkar',
+        age: 35,
+        add: 'mumbai'
+    };
+
+    console.log(user.firstName);
+    console.log(user['firstName']);
+
+    // console.log(user.last Name);
+    console.log(user['last Name']);
+
+    let a = 'add';
+    console.log(user.a);
+    console.log(user[a]);
+
+    for(key in user){
+        console.log(key+"=========="+user[key])
+    }
+
+</script>

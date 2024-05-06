@@ -1,0 +1,24 @@
+<script>
+    let user = {
+        firstName: 'sachin',
+        'last Name': 'tendulkar',
+        age: 35,
+        add: 'mumbai',
+    };
+
+    console.log(user.length);
+
+    let allKeys = Object.keys(user);
+    console.log(allKeys, allKeys.length);
+
+    let allValues = Object.values(user);
+    console.log(allValues);
+
+    let allEntries = Object.entries(user);
+    console.log(allEntries);
+
+    let userObj = Object.fromEntries(allEntries)
+    console.log(userObj)
+
+    console.log(user?.address?.city); // Optional Chaining
+</script>

@@ -1,0 +1,23 @@
+<script>
+    class Employee {
+        constructor(name, sal) {
+            this.name = name;
+            this.sal = sal;
+        }
+    }
+    Employee.prototype.comp = 'IBM';
+
+    let emp1 = new Employee('Siva', 5000)
+    let emp2 = new Employee('Deepak', 4000)
+
+    console.log(emp1, emp2);
+
+    console.log('sal' in emp1); // false
+    console.log(emp1.hasOwnProperty('sal')); // false
+
+    console.log('comp' in emp1); // true
+    console.log(emp1.hasOwnProperty('comp')); // false
+
+    console.log('address' in emp1); // false
+    console.log(emp1.hasOwnProperty('address')); // false
+</script>

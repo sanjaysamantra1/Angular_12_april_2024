@@ -1,0 +1,8 @@
+<script>
+    let obj1 = { a: 10, b: 20 };
+    let obj2 = Object.create(obj1);
+    obj2.a = 15;
+    console.log(obj1, obj2)
+    obj2.__proto__.c = 30;
+    console.log(obj2.a, obj2.__proto__.a)
+</script>
