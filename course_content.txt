@@ -8,10 +8,10 @@ Closure - Yes
 Math - Yes
 String - Yes
 Array - Yes
-Object - 
-OOPS - 
-Prototypes - 
-Call , bind , apply - 
+Object - Yes
+OOPS - Yes
+Prototypes - Yes
+Call , bind , apply - Yes
 Date & Time - 
 setTimeout , setInterval - 
 offline storage -    (HTML-5)

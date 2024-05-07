@@ -1,0 +1,14 @@
+<script>
+    name = 'abc';
+    msg = 'message-1';
+
+    function greet() {
+        console.log(`Hiiii ${this.name} , ${this.msg}`)
+    }
+    let siva = { name: 'siva', msg: 'Good Morning' }
+    let dhamrendra = { name: 'dhamrendra', msg: 'Good Afternoon' }
+
+    greet();
+    greet.call(siva);
+    greet.call(dhamrendra);
+</script>

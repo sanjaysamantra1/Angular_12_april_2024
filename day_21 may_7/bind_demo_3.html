@@ -1,0 +1,25 @@
+<script>
+    class Employee {
+        constructor(fName, lName, sal) {
+            this.fName = fName;
+            this.lName = lName;
+            this.sal = sal;
+        }
+        fullName() {
+            console.log('fullname invoked', this)
+            console.log(this.fName + " " + this.lName);
+        }
+        annualSal = () => {
+            console.log('annual Sal invoked', this)
+            console.log(this.sal * 12);
+        }
+    }
+    let emp1 = new Employee('sanjay', 'kumar', 2000);
+    // emp1.fullName();
+    // emp1.annualSal();
+    function test(cb1, cb2) {
+        cb1();
+        cb2();
+    }
+    test(emp1.fullName.bind(emp1), emp1.annualSal);
+</script>
