@@ -1,0 +1,9 @@
+<script>
+    function f1() {
+        document.writeln('Hellloooooo' + '<br />')
+    }
+    let timerId = setInterval(f1, 1000);
+    console.log(timerId)
+
+    setTimeout(clearInterval, 5000, timerId);
+</script>

@@ -1,0 +1,50 @@
+Date
+=====
+var ob = new Date();
+ob.getDate();
+ob.getMonth();
+ob.getYear();
+ob.getFullYear();
+ob.getTime();
+ob.getHours();
+ob.getMinutes();
+ob.getSeconds();
+
+ob.toLocaleDateString();
+ob.toLocaleTimeString();
+ob.toLocaleString('en-US', { timeZone: 'America/New_York' })
+
+
+
+setTimeout/setInterval (Window)
+=======================
+-setTimeout allows to run a function once, after a specified amount of time.
+-setInterval allows to run a function repeatedly after the specified interval of time.
+-Methods setTimeout(func, delay, ...args) and setInterval(func, delay, ...args) allow us to run the func once/regularly after delay milliseconds.
+-To cancel the execution, we should call clearTimeout/clearInterval with the value returned by setTimeout/setInterval.
+-Zero delay scheduling with setTimeout(func, 0) (the same as setTimeout(func)) is used to schedule the call “as soon as possible, but after the current script is complete”.
+-setTimeout expects a reference to a function, the function shouldn't be invoked.
+	setTimeout( f1 , 3000);  // correct
+	setTimeout( f1() , 3000);  // wrong
+-For setInterval the function stays in memory until clearInterval is called.
+-use recursive setTimeout() insteadof setInterval() if execution duration is longer than
+ interval time.
+-Recursive setTimeout guarantees a delay between the executions, setInterval – does not.
+-While this pattern does not guarantee execution on a fixed interval, it does guarantee that 
+the previous interval has completed before recursing.
+
+	(function loop(){
+	   setTimeout(function() {
+		  // Your logic here
+		  loop();
+	  }, delay);
+	})();
+
+
+id = setTimeout();
+id = setInterval();
+clearTimeOut(id);
+clearInterval(id);
+
+N.p - setTimeout(fn,0) means execute after all current functions in the present queue gets executed
+

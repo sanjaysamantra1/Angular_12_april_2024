@@ -12,8 +12,8 @@ Object - Yes
 OOPS - Yes
 Prototypes - Yes
 Call , bind , apply - Yes
-Date & Time - 
-setTimeout , setInterval - 
+Date & Time - Yes
+setTimeout , setInterval - Yes
 offline storage -    (HTML-5)
 
 
