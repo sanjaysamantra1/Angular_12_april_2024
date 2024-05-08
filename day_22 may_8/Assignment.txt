@@ -6,4 +6,4 @@ Timer
 Date
 ====
 1. Write a code to find how many days left for christmas.
-2. find last day of the month ( feb-28/29 , may - 31 )
+2. find last day of the month ( feb-28/29 , may - 31 ) (input - date obj)
