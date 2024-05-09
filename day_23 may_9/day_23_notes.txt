@@ -1,0 +1,84 @@
+offline storage- (HTML-5) (sessionStorage,localStorage)
+	   stores data in browser
+	   key-value pair
+	   text data (object-->JSON.stringify(object)-->string)
+				 (string-->JSON.parse(string)-->object)
+
+---can store up to 5 mb 
+---data will not be sent in the URL
+---secure
+---data can be used only in browser(clientside/browser)
+
+a. session storage 
+--session storage data will be there only for a single session.
+--data gets lost when we close the tab.
+
+	sessionStorage.length;
+	sessionStorage.setItem(key,value);
+	value = sessionStorage.getItem(key);
+	sessionStorage.removeItem(key);
+	sessionStorage.clear();
+	
+b. local storage (data remains there even after the tab/window is closed)
+  
+N.P - for sensitive information we should use session storage, not local storage.
+
+-Offline storage can store only String data.
+-if data is there in object form, convert to string and store in offline storage
+-while reading data, it always returns string, if you expect object then convert it to object form
+
+store data in Session storage
+----------------------------
+sessionstorage.setItem(key,value);
+OR
+sessionstorage.key = value
+
+get data from sessionstorage
+----------------------------
+var value = sessionStorage.get(key);
+OR
+var value = sessionStorage.key;
+
+remove data from sessionstorage
+--------------------------------
+sessionStorage.removeItem(key);
+
+remove all the items from sessionStorage
+---------------------------------------
+sessionStorage.clear();
+
+
+
+
+Promise
+=======
+-A promise is an object that holds the future value of an asynchronous operation.
+-A Promise object represents a value that is not available now, but will be resolved/available at some point in the future.
+-Promise object can have different states:- pending, resolved/fulfilled, rejected.
+ex:-if we request some data from a server, promise promises us to get that data 
+ that we can use in the future. 
+
+
+
+methods of Promise class:
+------------------------
+Promise.all(promises) – waits for all promises to resolve and returns an array of their results. If any of the given promises rejects, it becomes the error of Promise.all, and all other results are ignored.
+Promise.allSettled(promises) – when all of the given promises have either fulfilled or rejected
+	status: "fulfilled" or "rejected"
+	value (if fulfilled) or reason (if rejected).
+Promise.race(promises) – waits for the first promise to settle, and its result/error becomes the outcome.
+Promise.any(promises) – waits for the first promise to fulfill, and its result becomes the outcome. 
+				If all of the given promises are rejected, AggregateError becomes the error of Promise.any.
+Promise.resolve(value) – makes a resolved promise with the given value.
+Promise.reject(error) – makes a rejected promise with the given error.
+
+
+
+Async & Await
+-------------
+-async makes a function return a Promise,await makes a function wait for a Promise.
+-Async functions enable the programmer to write promise-based code, Syntax and structure of code  appears like synchronous code but doesn’t block the main thread of execution.
+-async and await makes the program very clean and understandable.there is no need of .then()
+-we can declare the Async functions in JavaScript by specifying the “async” keyword in front of the function definition.
+-For handling the async functions, we use the “await” keyword while invoking to 
+ function to wait for the promise to resolve.

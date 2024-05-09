@@ -14,7 +14,7 @@ Prototypes - Yes
 Call , bind , apply - Yes
 Date & Time - Yes
 setTimeout , setInterval - Yes
-offline storage -    (HTML-5)
+offline storage -    (HTML-5) - Yes
 
 
 ES-6 Features

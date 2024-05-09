@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="f1()">set data is session Storage</button>
+    <button onclick="f2()">set data is local Storage</button>
+    <script>
+        function f1() {
+            // Session Storage
+            sessionStorage.setItem('name', 'sanjay');
+            sessionStorage['age'] = 50;
+        }
+
+        function f2() {
+            // Local Storage
+            localStorage.setItem('pin', '560037')
+            localStorage.setItem('add', 'Bangalore')
+        }
+
+
+    </script>
+</body>
+
+</html>
