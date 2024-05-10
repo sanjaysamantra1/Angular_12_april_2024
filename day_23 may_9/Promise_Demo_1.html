@@ -10,12 +10,15 @@
             console.log(response);
             let jsonPromise = response.json();
             jsonPromise.then((finalData) => {
-                console.log(finalData)
+                console.log(finalData);
+            },
+            (err2) => {
+                console.log(err2)
             })
         },
         (error) => {
             console.log('something went wrong')
-        },
+        }
     )
 
 

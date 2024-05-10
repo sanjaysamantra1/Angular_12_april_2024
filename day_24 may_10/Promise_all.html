@@ -1,0 +1,36 @@
+<script>
+    let userNames = ['sanjaysamantra1', 'ushamahesh818', 'seun035'];
+
+    let requests = [
+        fetch(`https://api.github.com/users/${userNames[0]}`),
+        fetch(`https://api.github.com/users/${userNames[1]}`),
+        fetch(`https://api.github.com/users/${userNames[2]}`),
+    ]
+
+    // Promise.all(requests).then(
+    //     (responses) => {
+    //         let jsonRequests = responses.map(response => response.json());
+
+    //         Promise.all(jsonRequests).then(dataArr => {
+    //             console.log(dataArr)
+    //         })
+    //     },
+    //     err => {
+    //         console.log('Something went wrong')
+    //     }
+    // )
+
+
+    async function fetchData() {
+        try {
+            let responses2 = await Promise.all(requests);
+            console.log(responses2)
+            let jsonRequests2 = responses2.map(response => response.json());
+            let finalData2 = await Promise.all(jsonRequests2);
+            console.log(finalData2)
+        } catch (err) {
+            console.log(err)
+        }
+    }
+    fetchData();
+</script>

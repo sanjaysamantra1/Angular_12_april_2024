@@ -1,0 +1,2 @@
+fetch data from 'https://fakestoreapi.com/products' , 
+display the data in both table And card format

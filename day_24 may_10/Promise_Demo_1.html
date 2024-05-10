@@ -1,0 +1,42 @@
+<script>
+    let add = function (a, b) {
+        let result;
+        result = a + b;
+        return result;
+    }
+    let addResult = add(2, 3);
+    console.log(addResult); // 5
+
+    let sub = function (a, b) {
+        let result;
+        setTimeout(() => {
+            console.log('subbbbbbbbb')
+            result = a - b;
+        }, 1000);
+        return result;
+    }
+    let subResult = sub(2, 3);
+    console.log(subResult);
+
+    let mul = function (a, b) {
+        let myPromise = new Promise((resolve, reject) => {
+            if (typeof a == 'number' && typeof b == 'number') {
+                setTimeout(() => {
+                    resolve(a * b);
+                }, 2000)
+            }
+            else
+                reject(new Error('Wrong Input'));
+        });
+        return myPromise;
+    }
+    let mulPromise = mul(10, 'aa');
+    console.log(mulPromise)
+    mulPromise.then(
+        (res) => {
+            console.log('Multiplication Result is ', res)
+        }, (err) => {
+            console.error(err)
+        }
+    )
+</script>
